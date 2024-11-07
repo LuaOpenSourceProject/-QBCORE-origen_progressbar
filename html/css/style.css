@@ -1,0 +1,103 @@
+
+
+body {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.progress-container {
+    display: none;
+    z-index: 5;
+    color: #fff;
+    width: 15%;
+    position: fixed;
+    bottom: 5vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    animation: escala 0.3s ease-in-out forwards;
+    opacity: 1;
+}
+
+.progress-labels {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    display: inline-block;
+    white-space: nowrap;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: bankgothic !important;
+    padding-top: 0.4vh;
+    overflow: visible !important;
+    position: relative;
+    z-index: 9999;
+    text-shadow: 0 0 10px white;
+}
+
+.progress-labels div {
+    font-size: 2vh;
+    position: relative;
+    color: #fff;
+    z-index: 10;
+    overflow: visible !important;
+      overflow-x: visible;
+      overflow-y: visible;
+    text-shadow: 0 0 10px #ffffffba;
+    font-family: "Bebas Neue";
+    z-index: 999;
+    letter-spacing:.2vh;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 31px;
+    text-align: left;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    padding: 5px;
+    overflow: visible;
+    background: #000000ac;
+      background-position-x: 0%;
+      background-position-y: 0%;
+    box-shadow: rgb(0 0 0 / 75%) 0px 0px 40px;
+    border-radius: 3px;
+    background-position: center;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s;
+      transition-timing-function: ease;
+    transition-timing-function: ease-out;
+    background: white !important;
+    background-color: white !important;
+      background-size: auto;
+    box-shadow: 0 0 10px 2px white;
+    box-shadow: 0 0 10px #ffffffbf;
+    background-size: 200px;
+ 
+
+}
+
+@keyframes escala {
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
